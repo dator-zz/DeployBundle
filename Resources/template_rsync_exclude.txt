@@ -1,0 +1,16 @@
+# IDEs files
+.buildpath
+.project
+.settings
+nbproject
+
+# VCS files
+.gitignore
+.travis.yml
+
+/app/config/*_dev.yml
+/app/logs
+/app/cache
+web/*
+parameters.yml
+vendor

@@ -1,9 +1,16 @@
 <?php
 
-namespace Bundle\DeployBundle;
+/*
+ * (c) Simone Fumagalli <simone @ iliveinperego.com> - http://www.iliveinperego.com/
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-use Symfony\Component\HttpKernel\Bundle\Bundle as BaseBundle;
+namespace Hpatoio\DeployBundle;
 
-class DeployBundle extends BaseBundle
+use Symfony\Component\HttpKernel\Bundle\Bundle;
+
+class DeployBundle extends Bundle
 {
 }

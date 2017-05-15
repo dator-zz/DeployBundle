@@ -1,52 +1,27 @@
-Provide the symfony 1.4 command line to deploy your app on a server.
+DeployBundle
+=================
 
-## Installation
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/b4556cd7-652f-4a58-9126-eb2c1abd6c89/small.png)](https://insight.sensiolabs.com/projects/b4556cd7-652f-4a58-9126-eb2c1abd6c89)
 
-### Add DeployBundle to your src/Bundle dir
+Brings Symfony 1.4 project:deploy command to Symfony2.
 
-    git submodule add git://github.com/dator/DeployBundle.git src/Bundle/DeployBundle
+[![Total Downloads](https://poser.pugx.org/hpatoio/deploy-bundle/downloads.png)](https://packagist.org/packages/hpatoio/deploy-bundle)
+[![Latest Stable Version](https://poser.pugx.org/hpatoio/deploy-bundle/v/stable.png)](https://packagist.org/packages/hpatoio/deploy-bundle)
 
-### Add DeployBundle to your application kernel
+--
 
-    // app/AppKernel.php
-    public function registerBundles()
-    {
-        return array(
-            // ...
-            new Bundle\DeployBundle\DeployBundle(),
-            // ...
-        );
-    }
+**License**
 
-### Configure
+DeployBundle is licensed under the CC-BY-SA-3.0 - see [here](http://www.spdx.org/licenses/CC-BY-SA-3.0) for details
 
-    # app/config/config.yml
-    deploy.config:
-      prod:
-        host: 127.0.0.1 // or the hostname
-        user: root
-        dir: /path/to/dir
-        port: 22
-      stage:
-        host: 127.0.0.1 // or the hostname
-        user: root2
-        dir: /path/to/dir
-        port: 22
-    
-### Rsync Exclude
 
-Create a rsync_exclude.txt file under app/config to exclude files in your deployments.
+Documentation
+-------------
 
-### Use
+The bulk of the documentation is stored in the `Resources/doc/index.md` file in this bundle:
 
-Deployment is easy: 
+[Read the Documentation](https://github.com/hpatoio/DeployBundle/blob/master/Resources/doc/index.md)
 
-    php app/console project:deploy --go prod
-
-Simulate deployment
-
-    php app/console project:deploy prod
-
-or
-
-    php app/console project:deploy --dry-run prod
+Feedbacks & Support
+-------------
+If you need help or want a new feature feel free to open an issue here on Github or post a comment [here](http://www.iliveinperego.com/2012/03/symfony2-deploy-like-symfony-1-4/)
